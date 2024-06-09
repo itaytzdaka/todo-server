@@ -2,7 +2,7 @@ const dal = require("../data-access-layer/dal");
 
 // Get all items: 
 async function getAllItems() {
-    const sql = "SELECT _id, title, completed FROM Items ORDER BY completed";
+    const sql = "SELECT _id, title, completed FROM items ORDER BY completed";
     const items = await dal.executeAsync(sql);
     return items;
 }
